@@ -1,3 +1,3 @@
-### Distance Vector Routing
+### Link-State Routing
 
-This repository contains a basic implementation of the Distance Vector Routing protocol written in Python.
+This repository contains a basic implementation of the Link-State Routing protocol written in Python.

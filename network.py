@@ -17,7 +17,7 @@ class Network:
     def send_link_state_packets(self):
         for source_router in self.routers:
             for dest_router in self.routers:
-                dest_router.receive_link_state_packet(source_router.id, source_router.edges)
+                dest_router.receive_link_state_packet(source_router)
 
     def calculate_shortest_paths(self):
         for router in self.routers:

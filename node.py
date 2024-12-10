@@ -1,7 +1,10 @@
+import networkx as nx
+
 class Node:
     def __init__(self, id : str):
         self.id = id
-        self.edges : list[tuple[str, int]] = []   # This list of tuple represent node <-> distance
+        self.edges : nx.Graph = nx.Graph()
 
     def add_edge(self, node_id : str, distance : int):
-        self.edges.append((node_id, distance))
+        self.edges.add_edge(self.id, node_id, weight=distance)
+        

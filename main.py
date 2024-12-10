@@ -4,9 +4,9 @@ from router import Router
 if __name__ == "__main__":
     nw = Network()
     
-    r1 = Router("10")
-    r2 = Router("20")
-    r3 = Router("30")
+    r1 = Router("A")
+    r2 = Router("B")
+    r3 = Router("C")
     
     nw.add_router(r1)
     nw.add_router(r2)

@@ -1,6 +1,13 @@
-from node import Node
 import networkx as nx
-from dijkstra import dijkstra
+
+class Node:
+    def __init__(self, id : str):
+        self.id = id
+        self.edges : nx.Graph = nx.Graph()
+
+    def add_edge(self, node_id : str, distance : int):
+        self.edges.add_edge(self.id, node_id, weight=distance)
+
 
 class Router(Node):
     def __init__(self, id : str):

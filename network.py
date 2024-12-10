@@ -2,7 +2,7 @@ from router import Router
 
 class Network:
     def __init__(self):
-        self.routers = []
+        self.routers : list[Router] = []
 
     def add_router(self, router):
         """Add a router to the network."""
@@ -40,4 +40,4 @@ class Network:
     def print_routing_tables(self):
         """Print routing tables for each router of the network."""
         for router in self.routers:
-            print("Router " + router.id + ": " + router.print_routing_table())
+            router.print_routing_table()

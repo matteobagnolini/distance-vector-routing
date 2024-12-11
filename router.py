@@ -39,6 +39,7 @@ class Router(Node):
             if node != self.id:
                 next_hop = path[node][1]
                 self.routing_table[node] = (dist[node], next_hop)
+            self.routing_table[self.id] = (0, "")    # Compile row with itself, with distance = 0 and no next hop
 
     def print_routing_table(self):
         print("----------------------------------------------")

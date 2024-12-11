@@ -20,7 +20,6 @@ if __name__ == "__main__":
 
     nw.connect_routers(rA, rC, 5)
     nw.connect_routers(rA, rB, 2)
-    nw.connect_routers(rA, rD, 1)
     nw.connect_routers(rB, rD, 2)
     nw.connect_routers(rB, rC, 3)
     nw.connect_routers(rC, rF, 5)

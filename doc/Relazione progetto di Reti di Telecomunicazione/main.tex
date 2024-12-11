@@ -101,7 +101,7 @@ Infine, per stampare tutte le tabelle di routing, può essere chiamato il metodo
 
 \section{Guida Utente}
 Nel file \texttt{main.py} è possibile definire una propria topologia di rete e simulare il Link-State Routing protocol.\\
-\\
+\subsection{Definizione della Rete}
 Si inizia creando un'istanza della classe network:
 
 \begin{lstlisting}
@@ -169,9 +169,11 @@ oppure stamparle tutte insieme:
 \end{lstlisting}
 
 \newpage
-L'output generato è il seguente:
+\subsection{Avvio dell'Applicazione}
+Per avviare l'applicazione, basta eseguire il file \texttt{main.py} che abbiamo definito precedentemente, tramite terminale.\\
+L'output generato con la precedente configurazione è il seguente:
 \begin{lstlisting}[style=OutputStyle]
-    ----------------------------------------------
+----------------------------------------------
 Routing table for router A:
 Node A
          Cost: 0         Next hop: 
